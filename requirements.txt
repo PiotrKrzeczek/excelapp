@@ -5,3 +5,4 @@ Pillow<9.4.0
 plotly<5.11.0
 plotly_express<0.4.1
 streamlit<1.16.0
+xlrd<3.6.2
