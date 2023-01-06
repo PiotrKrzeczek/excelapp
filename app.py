@@ -5,8 +5,14 @@ import plotly_express as px
 import streamlit as st
 from PIL import Image
 import plotly.graph_objects as go
+import os
 
-df = pd.read_excel("C:/Users/piotr/Downloads/PET_CONS_PSUP_DC_NUS_MBBL_A.xls", sheet_name="Data 1")
+
+file_path = os.path.join(os.path.dirname(__file__),"PET_CONS_PSUP_DC_NUS_MBBL_A.xls")
+
+#df = pd.read_excel("C:/Users/piotr/PycharmProjects/web_app/PET_CONS_PSUP_DC_NUS_MBBL_A.xls", sheet_name="Data 1")
+df = pd.read_excel(file_path, sheet_name="Data 1")
+
 
 st.set_page_config(page_title='U.S. Product Supplied for Crude Oil and Petroleum Products',
                    page_icon=':pray:',
